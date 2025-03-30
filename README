@@ -1,0 +1,38 @@
+# B-Roll Mapper
+
+Ferramenta para criação de mapas de pesquisa visual com links interativos para b-roll.
+
+## Estrutura do Projeto
+
+```
+├── index.html             # Página principal
+├── styles.css             # Estilos CSS
+├── script.js              # Script principal (carregador de módulos)
+└── modules/               # Módulos JavaScript
+    ├── app.js             # Inicialização da aplicação
+    ├── store.js           # Gerenciamento de estado e LocalStorage
+    ├── ui.js              # Manipulação da interface do usuário
+    ├── events.js          # Manipuladores de eventos
+    ├── actions.js         # Ações do usuário (copiar, exportar, etc.)
+    ├── parser.js          # Funções de parseamento (Markdown e JSON)
+    ├── renderer.js        # Renderização de elementos da tabela
+    └── examples.js        # Exemplos de dados para carregar
+```
+
+## Recursos Principais
+
+- **Persistência de Dados:** Utiliza LocalStorage para salvar automaticamente o progresso
+- **Formato Markdown e JSON:** Suporta entrada de dados em dois formatos
+- **Links Personalizados:** Permite adicionar e gerenciar URLs personalizadas
+- **Exportação JSON:** Possibilidade de exportar e importar dados completos entre dispositivos
+- **Tradução Integrada:** Tradução automática de roteiros para diferentes idiomas
+- **Filtragem e Busca:** Filtra por fonte (BV, YT, GI, MOT) e busca textual em qualquer campo
+
+## Fluxo de Trabalho com JSON
+
+Para trabalhar em múltiplos dispositivos:
+
+1. Use o botão "Copiar JSON" para exportar seus dados
+2. Cole o JSON em um editor de texto ou serviço na nuvem (Notion, Google Docs, etc.)
+3. Em outro dispositivo, use "Inserir Dados" -> "JSON" e cole o conteúdo salvo
+4. Continue seu trabalho exatamente de onde parou
